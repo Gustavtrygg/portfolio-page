@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Outfit:wght@700&display=swap');
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+*{
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Outfit', sans-serif;
+    color: black;
+}
+h1{
+    color:black;
+}
+.nav-link{
+    color:black;
+}
+
+.img-fluid .content{
+    max-height: 300px;
+    background-size: cover;
+}
+
