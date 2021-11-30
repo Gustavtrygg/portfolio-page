@@ -12,127 +12,151 @@
   <link href="styles.css" rel="stylesheet">
 
   <title>Gustav Tryggveson</title>
+
+
 </head>
 
-<body>
+<body class="bg-light">
+
   <!--Fixa så naven är delad på vardeera sida-->
-  <nav class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">Gustav Tryggveson</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Case Studies</a></li>
-      </ul>
-    </header>
-  </nav>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
-    style="background-image:url(img/background.jpeg);">
-    <div class="card-img-overlay col-md-5 p-lg-5 mx-auto m-5">
-      <h1 class="mx-auto display-4 fw-normal text-center">UX designer</h1>
-      <p class="mx-auto lead fw-normal text-center">Redesingning product, websites and design systems that help people
-        and make a difference
-      </p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gustav Tryggveson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Njoy</a></li>
+              <li><a class="dropdown-item" href="pixer.html">Pixer</a></li>
+              <li><a class="dropdown-item" href="#">IKEA-layout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </nav>
+  <div class="d-flex justify-content-center align-items-center"
+    style="background-image: url(img/background.jpeg); height: 75vh;">
+
+    <div class="d-flex justify-content-center align-items-center h-100 w-40">
+      <h3 class="col-8">Hi! I'm Gustav, a UX designer with a love for the interaction with people</h3>
+    </div>
+
+
   </div>
-  <div class="album py-5 bg-light">
-
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <h1>Latest projects</h1>
+    </div>
+    <div class="container justify-content-center align-items-center">
+      <div class="row">
         <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/njoylogo.png" class="img-thumbnail" alt="njoy">
-
-            <div class="card-body">
-              <p class="card-text">Prototype restaurant</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">Learning exersice</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/pixer.png" class="img-thumbnail" alt="pixer">
-
-            <div class="card-body">
-              <p class="card-text">Prototype of a dating application</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">Learning exersice</small>
-              </div>
-            </div>
-          </div>
+          <img src="img/njoylogo.png" class="img-fluid content-img" alt="njoy">
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/IKEA.png" class="img-thumbnail" alt="ikea">
-
-            <div class="card-body">
-              <p class="card-text">Prototype of alternative website to IKEA</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">Learning exersice</small>
-              </div>
-            </div>
-          </div>
+          <h5 class="card-title">Njoy the local restaurant</h5>
+          <p class="card-text">The goal with this project/exercise was to build something from the ground
+            up and by using a local restaurant that had no existing website helped us in creating something uniqe
+          </p>
+          <p class="card-subtitle">Learning html/css</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="pixer.html"><img src="img/pixer.png" class="img-fluid content-img" alt="pixer"></a>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/systembolaget.png" class="img-thumbnail" alt="systembolaget">
-
-            <div class="card-body">
-              <p class="card-text">Selfscanning project</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">Learning exersice</small>
-              </div>
-            </div>
-          </div>
+          <h5 class="card-title">Pixer a different dating app</h5>
+          <p class="card-text">My first prototype build in Adobe XD. A new kind of dating application
+            where you recieve the picture of the person you are texting the same day that you have a booked for.</p>
+          <p class="card-subtitle">Learning prototype tools</p>
         </div>
 
+      </div>
+      <div class="row">
         <div class="col">
-          <div class="card shadow-sm">
-            <img src="img/kombo.png" class="img-thumbnail" alt="kombo">
-
-            <div class="card-body">
-              <p class="card-text">Learning the design sprint</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">Learning exersice</small>
-              </div>
-            </div>
-          </div>
+          <img src="img/IKEA.png" class="img-fluid content-img" alt="ikea">
         </div>
+        <div class="col">
+          <h5 class="card-title">A different aproach to IKEA</h5>
+          <p class="card-text">Our asignment was to find something existing and tweek it i littlebit so
+            that the user get a better experience based on the user-journey</p>
+          <p class="card-subtitle">Learning exercise</p>
+        </div>
+
       </div>
     </div>
   </div>
   </div>
+  <div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-4">
+          <img src="img/gustav.jpeg" class="d-block mx-lg-auto img-fluid aboutme" alt="Picture of me" width="700"
+            height="600" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">A more impactful about me title</h1>
+          <p class="lead">I'm an aspiring UX-designer based out of south sweden. The core to my passion resides in
+            stiring up the mess and deepdiving to the core of what the user really needs. </p>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">About me</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <footer class="row row-cols-5 py-5 my-5 border-top">
+
+    <div class="col">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <p class="text-muted">Summary of my work</p>
+    </div>
+
+    <div class="col">
+
+    </div>
+
+    <div class="col">
+      <h5>EC Utbildning</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Njoy</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pixer</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IKEA-layout</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Systembolaget</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kombo</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Real world projects</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">More to come</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">More to come</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">More to come</a></li>
+      </ul>
+    </div>
+
+
+  </footer>
 </body>
 
 </html>

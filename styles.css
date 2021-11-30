@@ -6,20 +6,80 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
-*{
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Outfit', sans-serif;
-    color: black;
-}
-h1{
-    color:black;
-}
-.nav-link{
-    color:black;
+
+* {
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
 }
 
-.img-fluid .content{
-    max-height: 300px;
+
+.content {
+    height: 300px;
+    max-width: 100%;
     background-size: cover;
 }
 
+
+.stretch {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    margin-right: auto;
+    margin-right: auto;
+}
+
+
+.compact {
+    width: 600px;
+}
+
+.control {
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+
+img.content-img {
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+div .card .subtitle {
+    transition: 0.5s;
+    color: transparent;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+div .card:hover .subtitle {
+    transition: 0.5s;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+@media only screen and (max-width:800px) {
+    img.card-img {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    img.card-img {
+        height: 275px;
+    }
+
+}
